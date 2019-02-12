@@ -1,3 +1,5 @@
 *
 !.gitignore
 !uml/
+!interfaces/
+cmake-build-debug/
