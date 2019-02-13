@@ -4,3 +4,4 @@
 !zia/**/*/
 !zia/**/*.hpp
 !zia/**/*.cpp
+!.clang-format
