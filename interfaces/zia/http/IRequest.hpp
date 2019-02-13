@@ -43,5 +43,6 @@ class IRequest : public IMessage {
   /// \param endpoint endpoint of the request
   virtual void setEndpoint(net::Endpoint const &endpoint) = 0;
 };
+
 } // namespace http
 } // namespace zia
