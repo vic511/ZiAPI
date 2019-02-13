@@ -12,7 +12,7 @@ namespace http {
 
 /// \brief Buffer for http modules
 /// \sa IMessage
-using Buffer = std::vector<std::u_int8>;
+using Buffer = std::vector<std::uint8_t>;
 
 } // namespace http
 } // namespace zia

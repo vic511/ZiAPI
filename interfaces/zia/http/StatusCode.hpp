@@ -11,6 +11,7 @@ namespace http {
 
 /// \brief
 /// \sa IResponse
-using StatusCode = std::u_int16;
+using StatusCode = std::uint16_t;
+
 } // namespace http
 } // namespace zia
