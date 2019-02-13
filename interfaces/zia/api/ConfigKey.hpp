@@ -10,8 +10,9 @@ namespace api {
 /// \sa IModuleDescriptor
 ///
 struct ConfigKey {
-    std::string name;  ///< Name of the key
-    std::string defaultValue; ///< Default value of the key, if empty the key is required in the configuration file
+    std::string name;          ///< Name of the key
+    std::string defaultValue;  ///< Default value of the key, if empty the key
+                               ///< is required in the configuration file
 };
 
 }  // namespace api

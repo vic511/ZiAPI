@@ -2,7 +2,6 @@
 
 #include <stdexcept>
 
-
 ///
 /// \brief Exception class for the Zia
 ///

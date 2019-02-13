@@ -15,36 +15,36 @@ namespace api {
 ///
 class IHttpModule : public IModule {
 public:
-  virtual ~IHttpModule() = default;
-  ///
-  /// \brief This method will be called just after the Http request is
-  /// received
-  /// \sa HookResult
-  /// \param request Data of the request
-  /// \param response Data of the response
-  /// \return Result of the hook
-  ///
-  virtual HookResult onRequest(http::IRequest &request,
-                               http::IResponse &response) = 0;
+    virtual ~IHttpModule() = default;
+    ///
+    /// \brief This method will be called just after the Http request is
+    /// received
+    /// \sa HookResult
+    /// \param request Data of the request
+    /// \param response Data of the response
+    /// \return Result of the hook
+    ///
+    virtual HookResult onRequest(http::IRequest &request,
+                                 http::IResponse &response) = 0;
 
-  ///
-  /// \brief This method will be called after the onRequest method
-  /// \param request Data of the request
-  /// \param response Date of th response
-  /// \return Result of the hook
-  ///
-  virtual HookResult onProcess(http::IRequest &request,
-                               http::IResponse &response) = 0;
+    ///
+    /// \brief This method will be called after the onRequest method
+    /// \param request Data of the request
+    /// \param response Date of th response
+    /// \return Result of the hook
+    ///
+    virtual HookResult onProcess(http::IRequest &request,
+                                 http::IResponse &response) = 0;
 
-  ///
-  /// \brief This method will be called before the response is send
-  /// \param request Data of the request
-  /// \param response Date of th response
-  /// \return Result of the hook
-  ///
-  virtual HookResult onResponse(http::IRequest &request,
-                                http::IResponse &response) = 0;
+    ///
+    /// \brief This method will be called before the response is send
+    /// \param request Data of the request
+    /// \param response Date of th response
+    /// \return Result of the hook
+    ///
+    virtual HookResult onResponse(http::IRequest &request,
+                                  http::IResponse &response) = 0;
 };
 
-} // namespace api
-} // namespace zia
+}  // namespace api
+}  // namespace zia

@@ -4,12 +4,12 @@
 #include <vector>
 
 namespace zia {
-    namespace net {
+namespace net {
 
-        ///
-        /// \brief Buffer type
-        ///
-        using Buffer = std::vector<std::uint8_t>;
+///
+/// \brief Buffer type
+///
+using Buffer = std::vector<std::uint8_t>;
 
-    }
-}
+}  // namespace net
+}  // namespace zia

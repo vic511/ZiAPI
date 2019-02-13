@@ -14,5 +14,5 @@ namespace http {
 /// \sa IMessage
 using Buffer = std::vector<std::uint8_t>;
 
-} // namespace http
-} // namespace zia
+}  // namespace http
+}  // namespace zia

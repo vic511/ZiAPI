@@ -12,10 +12,10 @@ namespace http {
 /// \brief throw a exception
 /// \sa IMessage
 class ParsingError : public Exception {
-  virtual ~ParsingError() = default;
+    virtual ~ParsingError() = default;
 
-  /// \param message error message
-  ParsingError(std::string const &message) : Exception(message) {}
+    /// \param message error message
+    ParsingError(std::string const &message) : Exception(message) {}
 };
-} // namespace http
-} // namespace zia
+}  // namespace http
+}  // namespace zia
