@@ -1,0 +1,4 @@
+<map id="zia::api::IModule" name="zia::api::IModule">
+<area shape="rect" id="node2" href="$classzia_1_1api_1_1IHttpModule.html" title="Interface for http modules, depends of the IModule interface. " alt="" coords="5,80,148,107"/>
+<area shape="rect" id="node3" href="$classzia_1_1api_1_1INetworkModule.html" title="Interface for network modules, depends of the IModule interface. " alt="" coords="172,80,339,107"/>
+</map>
