@@ -10,6 +10,7 @@ namespace net {
 /// \brief This class contains the data of a connection (Ip, Port, Socket)
 ///
 class IConnection {
+public:
     virtual ~IConnection() = default;
 
     ///

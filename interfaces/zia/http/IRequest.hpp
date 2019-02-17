@@ -4,8 +4,10 @@
 
 #pragma once
 
+#include <string>
 #include "zia/http/IMessage.hpp"
 #include "zia/http/Method.hpp"
+#include "zia/net/Endpoint.hpp"
 
 namespace zia {
 namespace http {
@@ -13,6 +15,7 @@ namespace http {
 /// \brief Interface for the request
 /// \sa IMessage
 class IRequest : public IMessage {
+public:
     virtual ~IRequest() = default;
 
     /// \brief get the type of the request
@@ -37,11 +40,11 @@ class IRequest : public IMessage {
 
     /// \brief get the endpoint of the request
     /// \return the endpoint of the request
-    virtual net::Endpoint const &getEndpoint() = 0;
+    virtual zia::net::Endpoint const &getEndpoint() = 0;
 
     /// \brief set the endpoint of the request
     /// \param endpoint endpoint of the request
-    virtual void setEndpoint(net::Endpoint const &endpoint) = 0;
+    virtual void setEndpoint(zia::net::Endpoint const &endpoint) = 0;
 };
 
 }  // namespace http

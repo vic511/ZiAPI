@@ -13,6 +13,7 @@ namespace http {
 /// \brief Interface for the response
 /// \sa IMessage
 class IResponse : public IMessage {
+public:
     virtual ~IResponse() = default;
 
     /// \brief set the status of the response

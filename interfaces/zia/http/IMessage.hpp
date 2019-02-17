@@ -10,6 +10,7 @@ namespace http {
 
 /// \brief Interface for the message
 class IMessage {
+public:
     virtual ~IMessage() = default;
 
     /// \brief getter of body
