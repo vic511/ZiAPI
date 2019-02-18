@@ -3,4 +3,5 @@
 !uml/
 !interfaces/
 !doc/
+!doc/**/*
 cmake-build-debug/
