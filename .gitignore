@@ -2,6 +2,6 @@
 !.gitignore
 !uml/
 !interfaces/
-!doc/
-!doc/**/*
+!docs/
+!docs/**/*
 cmake-build-debug/
