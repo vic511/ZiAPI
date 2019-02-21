@@ -10,7 +10,8 @@ namespace zia {
 namespace api {
 
 ///
-/// \brief This class will be "Cutillas fais le reste plz "
+/// \brief This class will be the "descriptor" of a module and the link to the
+/// creation of this one
 ///
 ///
 class IModuleDescriptor {
