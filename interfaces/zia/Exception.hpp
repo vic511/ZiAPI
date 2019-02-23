@@ -5,6 +5,7 @@
 ///
 /// \brief Exception class for the Zia
 ///
+namespace zia {
 class Exception : public std::runtime_error {
 public:
     virtual ~Exception() = default;
@@ -14,3 +15,4 @@ public:
     explicit Exception(std::string const &whatArg) : std::runtime_error(whatArg)
     {}
 };
+}  // namespace zia
