@@ -49,6 +49,3 @@ private:
     static const std::string _name;
     static const std::vector<zia::api::ConfigKey> _configKey;
 };
-
-const std::string HelloWorldModuleDescriptor::_name =
-        std::string("hello world");

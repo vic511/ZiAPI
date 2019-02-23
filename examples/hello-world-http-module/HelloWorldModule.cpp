@@ -32,3 +32,5 @@ extern "C" {
 HelloWorldModuleDescriptor descriptor;
 }
 
+const std::string HelloWorldModuleDescriptor::_name =
+        std::string("HelloWorld");
