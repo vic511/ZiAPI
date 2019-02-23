@@ -5,3 +5,5 @@
 !docs/
 !docs/**/*
 cmake-build-debug/
+!examples/**/*
+!examples/
