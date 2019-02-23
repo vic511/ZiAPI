@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structzia_1_1api_1_1ConfigKey.html" title="Structure for the default configuration of a Module. " alt="" coords="5,5,139,32"/>
+<area shape="rect" id="node1" href="$classzia_1_1api_1_1IModule.html" title="Zia module interface. " alt="" coords="5,31,124,57"/>
+<area shape="rect" id="node2" href="$classzia_1_1api_1_1IHttpModule.html" title="Interface for http modules, depends of the IModule interface. " alt="" coords="184,5,327,32"/>
+<area shape="rect" id="node3" href="$classzia_1_1api_1_1INetworkModule.html" title="Interface for network modules, depends of the IModule interface. " alt="" coords="172,56,339,83"/>
 </map>
