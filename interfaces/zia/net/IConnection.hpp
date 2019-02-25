@@ -18,15 +18,15 @@ public:
     /// \sa Endpoint
     /// \return Endpoint
     ///
-    virtual Endpoint const &getEndpoint() = 0;
+    virtual Endpoint const &getEndpoint() const = 0;
 
     ///
     /// \brief Return the Socket
     /// \sa Socket
     /// \return Socket
     ///
-    virtual Socket const &getSocket() = 0;
-};
+    virtual Socket const &getSocket() const = 0;
+ };
 
 }  // namespace net
 }  // namespace zia

@@ -8,7 +8,7 @@ namespace api {
 ///
 /// \brief Configuration error class
 ///
-class ConfigurationError : public Exception {
+class ConfigurationError : public zia::Exception {
 public:
     explicit ConfigurationError(std::string const &message) : Exception(message)
     {}
