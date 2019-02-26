@@ -6,7 +6,7 @@
 
 class IpWhiteListModule : public zia::api::INetworkModule {
 public:
-    IpWhiteListModule() = default;
+    IpWhiteListModule();
 
     zia::api::HookResult onAccept(
         const zia::net::IConnection &connection) override;

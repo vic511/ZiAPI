@@ -1,18 +1,18 @@
 #include "HelloWorldModule.hpp"
 
 void HelloWorldModule::loadConfiguration(
-    std::unordered_map<std::string, std::string> const &config)
+    std::unordered_map<std::string, std::string> const &)
 {
     // If your module needs configuration
 }
 
-zia::api::HookResult HelloWorldModule::onRequest(zia::http::IRequest &request,
-                                                 zia::http::IResponse &response)
+zia::api::HookResult HelloWorldModule::onRequest(zia::http::IRequest &,
+                                                 zia::http::IResponse &)
 {
     return zia::api::HookResult::Declined;
 }
 
-zia::api::HookResult HelloWorldModule::onProcess(zia::http::IRequest &request,
+zia::api::HookResult HelloWorldModule::onProcess(zia::http::IRequest &,
                                                  zia::http::IResponse &response)
 {
     zia::http::Buffer buff("Hello world");
@@ -22,7 +22,7 @@ zia::api::HookResult HelloWorldModule::onProcess(zia::http::IRequest &request,
 }
 
 zia::api::HookResult HelloWorldModule::onResponse(
-    zia::http::IRequest &request, zia::http::IResponse &response)
+    zia::http::IRequest &, zia::http::IResponse &)
 {
     //
     return zia::api::HookResult::Declined;
@@ -32,5 +32,4 @@ extern "C" {
 HelloWorldModuleDescriptor descriptor;
 }
 
-const std::string HelloWorldModuleDescriptor::_name =
-        std::string("HelloWorld");
+const std::string HelloWorldModuleDescriptor::_name = std::string("HelloWorld");

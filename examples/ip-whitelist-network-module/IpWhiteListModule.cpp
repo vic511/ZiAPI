@@ -3,6 +3,8 @@
 #include "IpWhiteListModule.hpp"
 #include "zia/api/ConfigurationError.hpp"
 
+IpWhiteListModule::IpWhiteListModule() : _ipList() {}
+
 void IpWhiteListModule::loadConfiguration(
     std::unordered_map<std::string, std::string> const &config)
 {
@@ -20,32 +22,31 @@ zia::api::HookResult IpWhiteListModule::onAccept(
     return zia::api::HookResult::Abort;
 }
 
-zia::api::HookResult IpWhiteListModule::doRead(
-    const zia::net::IConnection &connection, zia::net::Buffer &buffer)
+zia::api::HookResult IpWhiteListModule::doRead(const zia::net::IConnection &,
+                                               zia::net::Buffer &)
 {
     return zia::api::HookResult::Declined;
 }
 
-zia::api::HookResult IpWhiteListModule::onRead(
-    const zia::net::IConnection &connection, zia::net::Buffer &buffer)
+zia::api::HookResult IpWhiteListModule::onRead(const zia::net::IConnection &,
+                                               zia::net::Buffer &)
 {
     return zia::api::HookResult::Declined;
 }
 
-zia::api::HookResult IpWhiteListModule::doWrite(
-    const zia::net::IConnection &connection, zia::net::Buffer &buffer)
+zia::api::HookResult IpWhiteListModule::doWrite(const zia::net::IConnection &,
+                                                zia::net::Buffer &)
 {
     return zia::api::HookResult::Declined;
 }
 
-zia::api::HookResult IpWhiteListModule::onWrite(
-    const zia::net::IConnection &connection, zia::net::Buffer &buffer)
+zia::api::HookResult IpWhiteListModule::onWrite(const zia::net::IConnection &,
+                                                zia::net::Buffer &)
 {
     return zia::api::HookResult::Declined;
 }
 
-zia::api::HookResult IpWhiteListModule::onClose(
-    const zia::net::IConnection &connection)
+zia::api::HookResult IpWhiteListModule::onClose(const zia::net::IConnection &)
 {
     return zia::api::HookResult::Declined;
 }
@@ -67,7 +68,8 @@ std::vector<zia::net::Address> IpWhiteListModule::parseIpList(
             it = cpy.length();
         }
         if (inet_aton(substr.c_str(), &addr) == 0) {
-            throw zia::api::ConfigurationError("IpWhiteListModule : error in ip list");
+            throw zia::api::ConfigurationError(
+                "IpWhiteListModule : error in ip list");
         }
         vec.push_back(addr.s_addr);
     }
@@ -75,7 +77,7 @@ std::vector<zia::net::Address> IpWhiteListModule::parseIpList(
 }
 
 const std::string IpWhiteListModuleDescriptor::_name =
-        std::string("IpWhiteList");
+    std::string("IpWhiteList");
 
 extern "C" {
 IpWhiteListModuleDescriptor descriptor;
