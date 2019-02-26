@@ -12,7 +12,7 @@ namespace http {
 
 /// \brief Interface for the response
 /// \sa IMessage
-class IResponse : public IMessage {
+class IResponse : virtual public IMessage {
 public:
     virtual ~IResponse() = default;
 

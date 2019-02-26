@@ -14,7 +14,7 @@ namespace http {
 
 /// \brief Interface for the request
 /// \sa IMessage
-class IRequest : public IMessage {
+class IRequest : virtual public IMessage {
 public:
     virtual ~IRequest() = default;
 
