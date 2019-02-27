@@ -9,22 +9,22 @@ public:
     IpWhiteListModule();
 
     zia::api::HookResult onAccept(
-        const zia::net::IConnection &connection) override;
+        const zia::net::Connection &connection) override;
 
-    zia::api::HookResult doRead(const zia::net::IConnection &connection,
+    zia::api::HookResult doRead(const zia::net::Connection &connection,
                                 zia::net::Buffer &buffer) override;
 
-    zia::api::HookResult onRead(const zia::net::IConnection &connection,
+    zia::api::HookResult onRead(const zia::net::Connection &connection,
                                 zia::net::Buffer &buffer) override;
 
-    zia::api::HookResult doWrite(const zia::net::IConnection &connection,
+    zia::api::HookResult doWrite(const zia::net::Connection &connection,
                                  zia::net::Buffer &buffer) override;
 
-    zia::api::HookResult onWrite(const zia::net::IConnection &connection,
+    zia::api::HookResult onWrite(const zia::net::Connection &connection,
                                  zia::net::Buffer &buffer) override;
 
     zia::api::HookResult onClose(
-        const zia::net::IConnection &connection) override;
+        const zia::net::Connection &connection) override;
 
     void loadConfiguration(
         std::unordered_map<std::string, std::string> const &config) override;

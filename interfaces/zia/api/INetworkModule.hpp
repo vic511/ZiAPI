@@ -3,7 +3,7 @@
 #include "zia/api/HookResult.hpp"
 #include "zia/api/IModule.hpp"
 #include "zia/net/Buffer.hpp"
-#include "zia/net/IConnection.hpp"
+#include "zia/net/Connection.hpp"
 
 namespace zia {
 namespace api {
@@ -23,7 +23,7 @@ public:
     /// Socket)
     /// \return Result of the hook
     ///
-    virtual HookResult onAccept(net::IConnection const &connection) = 0;
+    virtual HookResult onAccept(net::Connection const &connection) = 0;
 
     ///
     /// \brief This method wiil be called instead of the basic read function
@@ -33,7 +33,7 @@ public:
     /// \param buffer Contains the data read by the method
     /// \return Result of the hook
     ///
-    virtual HookResult doRead(net::IConnection const &connection,
+    virtual HookResult doRead(net::Connection const &connection,
                               net::Buffer &buffer) = 0;
 
     ///
@@ -44,7 +44,7 @@ public:
     /// \param buffer Contains the data read by the read function
     /// \return Result of the hook
     ///
-    virtual HookResult onRead(net::IConnection const &connection,
+    virtual HookResult onRead(net::Connection const &connection,
                               net::Buffer &buffer) = 0;
 
     ///
@@ -55,7 +55,7 @@ public:
     /// \param buffer Contains the data to write in the Socket
     /// \return Result of the hook
     ///
-    virtual HookResult doWrite(net::IConnection const &connection,
+    virtual HookResult doWrite(net::Connection const &connection,
                                net::Buffer &buffer) = 0;
 
     ///
@@ -66,7 +66,7 @@ public:
     /// \param buffer Contains the data write by the read function
     /// \return Result of the hook
     ///
-    virtual HookResult onWrite(net::IConnection const &connection,
+    virtual HookResult onWrite(net::Connection const &connection,
                                net::Buffer &buffer) = 0;
 
     ///
@@ -76,7 +76,7 @@ public:
     /// Socket)
     /// \return Result of the hook
     ///
-    virtual HookResult onClose(net::IConnection const &connection) = 0;
+    virtual HookResult onClose(net::Connection const &connection) = 0;
 };
 
 }  // namespace api

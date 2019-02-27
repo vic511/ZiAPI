@@ -12,41 +12,41 @@ void IpWhiteListModule::loadConfiguration(
 }
 
 zia::api::HookResult IpWhiteListModule::onAccept(
-    const zia::net::IConnection &connection)
+    const zia::net::Connection &connection)
 {
     for (auto const &addr : _ipList) {
-        if (connection.getEndpoint().address == addr) {
+        if (connection.endpoint.address == addr) {
             return zia::api::HookResult::Ok;
         }
     }
     return zia::api::HookResult::Abort;
 }
 
-zia::api::HookResult IpWhiteListModule::doRead(const zia::net::IConnection &,
+zia::api::HookResult IpWhiteListModule::doRead(const zia::net::Connection &,
                                                zia::net::Buffer &)
 {
     return zia::api::HookResult::Declined;
 }
 
-zia::api::HookResult IpWhiteListModule::onRead(const zia::net::IConnection &,
+zia::api::HookResult IpWhiteListModule::onRead(const zia::net::Connection &,
                                                zia::net::Buffer &)
 {
     return zia::api::HookResult::Declined;
 }
 
-zia::api::HookResult IpWhiteListModule::doWrite(const zia::net::IConnection &,
+zia::api::HookResult IpWhiteListModule::doWrite(const zia::net::Connection &,
                                                 zia::net::Buffer &)
 {
     return zia::api::HookResult::Declined;
 }
 
-zia::api::HookResult IpWhiteListModule::onWrite(const zia::net::IConnection &,
+zia::api::HookResult IpWhiteListModule::onWrite(const zia::net::Connection &,
                                                 zia::net::Buffer &)
 {
     return zia::api::HookResult::Declined;
 }
 
-zia::api::HookResult IpWhiteListModule::onClose(const zia::net::IConnection &)
+zia::api::HookResult IpWhiteListModule::onClose(const zia::net::Connection &)
 {
     return zia::api::HookResult::Declined;
 }
@@ -79,6 +79,4 @@ std::vector<zia::net::Address> IpWhiteListModule::parseIpList(
 const std::string IpWhiteListModuleDescriptor::_name =
     std::string("IpWhiteList");
 
-extern "C" {
-IpWhiteListModuleDescriptor descriptor;
-}
+extern "C" IpWhiteListModuleDescriptor descriptor;
