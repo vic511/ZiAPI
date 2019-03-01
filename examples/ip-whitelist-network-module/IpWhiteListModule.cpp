@@ -79,7 +79,9 @@ std::vector<zia::net::Address> IpWhiteListModule::parseIpList(
 const std::string IpWhiteListModuleDescriptor::_name =
     std::string("IpWhiteList");
 
-extern "C" {
+const std::vector<zia::api::ConfigKey> IpWhiteListModuleDescriptor::_configKey =
+    {};
 
+extern "C" {
 IpWhiteListModuleDescriptor descriptor;
 }
