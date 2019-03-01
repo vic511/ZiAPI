@@ -20,7 +20,7 @@ public:
 
     /// \brief get the type of the request
     /// \return type of the request
-  virtual std::string getMethod() = const 0;
+  virtual std::string getMethod() const = 0;
 
     /// \brief set the type of the request
     /// \param method type of the request
