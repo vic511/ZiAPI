@@ -20,7 +20,7 @@ public:
 
     /// \brief get the type of the request
     /// \return type of the request
-  virtual std::string getMethod() = 0;
+  virtual std::string getMethod() = const 0;
 
     /// \brief set the type of the request
     /// \param method type of the request
@@ -32,7 +32,7 @@ public:
 
     /// \brief get the path of the request
     /// \return path of the request
-    virtual std::string const &getPath() = 0;
+    virtual std::string const &getPath() const = 0;
 
     /// \brief set the path of the request
     /// \param path path of the request
@@ -40,7 +40,7 @@ public:
 
     /// \brief get the endpoint of the request
     /// \return the endpoint of the request
-    virtual zia::net::Endpoint const &getEndpoint() = 0;
+    virtual zia::net::Endpoint const &getEndpoint() const = 0;
 
     /// \brief set the endpoint of the request
     /// \param endpoint endpoint of the request
