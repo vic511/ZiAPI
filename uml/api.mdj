@@ -4925,7 +4925,7 @@
 											"top": 557,
 											"width": 624.67919921875,
 											"height": 13,
-											"text": "+doRead(connection: net::IConnection const &, buffer: net::Buffer &): HookResult",
+											"text": "+doRead(connection: net::Connection const &, buffer: net::Buffer &): HookResult",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4943,7 +4943,7 @@
 											"top": 572,
 											"width": 624.67919921875,
 											"height": 13,
-											"text": "+doWrite(connection: net::IConnection const &, buffer: net::Buffer const &, written: std::size_t &): HookResult",
+											"text": "+doWrite(connection: net::Connection const &, buffer: net::Buffer const &, written: std::size_t &): HookResult",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4961,7 +4961,7 @@
 											"top": 587,
 											"width": 624.67919921875,
 											"height": 13,
-											"text": "+onAccept(connection: net::IConnection const &): HookResult",
+											"text": "+onAccept(connection: net::Connection const &): HookResult",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4979,7 +4979,7 @@
 											"top": 602,
 											"width": 624.67919921875,
 											"height": 13,
-											"text": "+onRead(connection: net::IConnection const &, buffer: net::Buffer &): HookResult",
+											"text": "+onRead(connection: net::Connection const &, buffer: net::Buffer &): HookResult",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4997,7 +4997,7 @@
 											"top": 617,
 											"width": 624.67919921875,
 											"height": 13,
-											"text": "+onWrite(connection: net::IConnection const &, buffer: net::Buffer &): HookResult",
+											"text": "+onWrite(connection: net::Connection const &, buffer: net::Buffer &): HookResult",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5015,7 +5015,7 @@
 											"top": 632,
 											"width": 624.67919921875,
 											"height": 13,
-											"text": "+onClose(connection: net::IConnection const &): HookResult",
+											"text": "+onClose(connection: net::Connection const &): HookResult",
 											"horizontalAlignment": 0
 										}
 									],
@@ -7691,7 +7691,7 @@
 										"$ref": "AAAAAAFo3PoB83OCJ2w="
 									},
 									"name": "connection",
-									"type": "net::IConnection const &"
+									"type": "net::Connection const &"
 								},
 								{
 									"_type": "UMLParameter",
@@ -7731,7 +7731,7 @@
 										"$ref": "AAAAAAFo3PqKt3OOXrY="
 									},
 									"name": "connection",
-									"type": "net::IConnection const &"
+									"type": "net::Connection const &"
 								},
 								{
 									"_type": "UMLParameter",
@@ -7780,7 +7780,7 @@
 										"$ref": "AAAAAAFo3RJT+3Tsh/8="
 									},
 									"name": "connection",
-									"type": "net::IConnection const &"
+									"type": "net::Connection const &"
 								},
 								{
 									"_type": "UMLParameter",
@@ -7811,7 +7811,7 @@
 										"$ref": "AAAAAAFo3Rp5L3U1I8c="
 									},
 									"name": "connection",
-									"type": "net::IConnection const &"
+									"type": "net::Connection const &"
 								},
 								{
 									"_type": "UMLParameter",
@@ -7851,7 +7851,7 @@
 										"$ref": "AAAAAAFo3RrEj3U89XY="
 									},
 									"name": "connection",
-									"type": "net::IConnection const &"
+									"type": "net::Connection const &"
 								},
 								{
 									"_type": "UMLParameter",
@@ -7891,7 +7891,7 @@
 										"$ref": "AAAAAAFo3RUgB3Up7B4="
 									},
 									"name": "connection",
-									"type": "net::IConnection const &"
+									"type": "net::Connection const &"
 								},
 								{
 									"_type": "UMLParameter",
