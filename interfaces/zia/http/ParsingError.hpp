@@ -12,6 +12,7 @@ namespace http {
 /// \brief throw a exception
 /// \sa IMessage
 class ParsingError : public zia::Exception {
+public:
     virtual ~ParsingError() = default;
 
     /// \param message error message
