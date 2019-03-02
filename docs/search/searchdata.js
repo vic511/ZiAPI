@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "acdegilnopsz",
   1: "ceip",
   2: "z",
-  3: "cdglos",
+  3: "cdglops",
   4: "adenps"
 };
 
