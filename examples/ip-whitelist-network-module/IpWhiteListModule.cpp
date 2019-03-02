@@ -71,7 +71,7 @@ std::vector<zia::net::Address> IpWhiteListModule::parseIpList(
             throw zia::api::ConfigurationError(
                 "IpWhiteListModule : error in ip list");
         }
-        vec.push_back(addr.s_addr);
+        vec.push_back(ntohl(addr.s_addr));
     }
     return vec;
 }
@@ -79,7 +79,9 @@ std::vector<zia::net::Address> IpWhiteListModule::parseIpList(
 const std::string IpWhiteListModuleDescriptor::_name =
     std::string("IpWhiteList");
 
-extern "C" {
+const std::vector<zia::api::ConfigKey> IpWhiteListModuleDescriptor::_configKey =
+    {};
 
+extern "C" {
 IpWhiteListModuleDescriptor descriptor;
 }

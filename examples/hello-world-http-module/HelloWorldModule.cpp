@@ -21,10 +21,9 @@ zia::api::HookResult HelloWorldModule::onProcess(zia::http::IRequest &,
     return zia::api::HookResult::Ok;
 }
 
-zia::api::HookResult HelloWorldModule::onResponse(
-    zia::http::IRequest &, zia::http::IResponse &)
+zia::api::HookResult HelloWorldModule::onResponse(zia::http::IRequest &,
+                                                  zia::http::IResponse &)
 {
-    //
     return zia::api::HookResult::Declined;
 }
 
@@ -33,3 +32,6 @@ HelloWorldModuleDescriptor descriptor;
 }
 
 const std::string HelloWorldModuleDescriptor::_name = std::string("HelloWorld");
+
+const std::vector<zia::api::ConfigKey> HelloWorldModuleDescriptor::_configKey =
+    {};

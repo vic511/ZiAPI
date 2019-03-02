@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['port',['port',['../structzia_1_1net_1_1Endpoint.html#ae1d7e04ce3e331edade6c2865f6ff4b3',1,'zia::net::Endpoint']]]
+  ['name',['name',['../structzia_1_1api_1_1ConfigKey.html#a114cb3d23e7ef0614c07a6561c825ba6',1,'zia::api::ConfigKey']]]
 ];

@@ -1,7 +1,6 @@
 #pragma once
 
-#include <cstdint>
-#include <vector>
+#include <string>
 
 namespace zia {
 namespace net {
@@ -9,7 +8,7 @@ namespace net {
 ///
 /// \brief Buffer type
 ///
-using Buffer = std::vector<std::uint8_t>;
+using Buffer = std::string;
 
 }  // namespace net
 }  // namespace zia
