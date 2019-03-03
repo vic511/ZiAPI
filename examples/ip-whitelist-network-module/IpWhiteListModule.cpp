@@ -80,7 +80,7 @@ const std::string IpWhiteListModuleDescriptor::_name =
     std::string("IpWhiteList");
 
 const std::vector<zia::api::ConfigKey> IpWhiteListModuleDescriptor::_configKey =
-    {};
+    {zia::api::ConfigKey{"WhiteListedIps", ""}};
 
 extern "C" {
 IpWhiteListModuleDescriptor descriptor;
