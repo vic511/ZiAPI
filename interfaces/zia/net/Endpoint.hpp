@@ -10,8 +10,8 @@ namespace net {
 /// \brief Endpoint structure contains the Ip and the Port of the connection
 ///
 struct Endpoint {
-    Port port;        ///< Port type
     Address address;  ///< Address type
+    Port port;        ///< Port type
 };
 
 }  // namespace net
