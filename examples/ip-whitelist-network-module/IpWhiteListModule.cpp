@@ -35,7 +35,8 @@ zia::api::HookResult IpWhiteListModule::onRead(const zia::net::Connection &,
 }
 
 zia::api::HookResult IpWhiteListModule::doWrite(const zia::net::Connection &,
-                                                zia::net::Buffer &)
+                                                zia::net::Buffer const &,
+                                                std::size_t &)
 {
     return zia::api::HookResult::Declined;
 }

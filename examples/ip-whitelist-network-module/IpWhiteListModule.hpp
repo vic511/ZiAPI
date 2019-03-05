@@ -18,7 +18,8 @@ public:
                                 zia::net::Buffer &buffer) override;
 
     zia::api::HookResult doWrite(const zia::net::Connection &connection,
-                                 zia::net::Buffer &buffer) override;
+                                 zia::net::Buffer const &buffer,
+                                 std::size_t &written) override;
 
     zia::api::HookResult onWrite(const zia::net::Connection &connection,
                                  zia::net::Buffer &buffer) override;

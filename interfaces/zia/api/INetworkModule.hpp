@@ -53,10 +53,12 @@ public:
     /// \param connection Contains the data of the connection (Endpoint and
     /// Socket)
     /// \param buffer Contains the data to write in the Socket
+    /// \param written Number of bytes written
     /// \return Result of the hook
     ///
     virtual HookResult doWrite(net::Connection const &connection,
-                               net::Buffer &buffer) = 0;
+                               net::Buffer const &buffer,
+                               std::size_t &written) = 0;
 
     ///
     /// \brief This method wiil be called after the write function

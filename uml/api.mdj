@@ -4997,7 +4997,7 @@
 											"top": 617,
 											"width": 624.67919921875,
 											"height": 13,
-											"text": "+onWrite(connection: net::Connection const &, buffer: net::Buffer &): HookResult",
+											"text": "+onWrite(connection: net::Connection const &, buffer: net::Buffer const &, written: std::size_t &): HookResult",
 											"horizontalAlignment": 0
 										},
 										{
@@ -7872,7 +7872,16 @@
 										"$ref": "AAAAAAFo3RrEj3U89XY="
 									},
 									"name": "buffer",
-									"type": "net::Buffer &"
+									"type": "net::Buffer const &"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFpT4xASLcm/uo=",
+									"_parent": {
+										"$ref": "AAAAAAFo3RrEj3U89XY="
+									},
+									"name": "written",
+									"type": "std::size_t &"
 								}
 							]
 						},
