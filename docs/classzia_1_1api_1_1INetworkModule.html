@@ -103,9 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a51dbf23eba66283a5e5d946275872f88"><td class="memItemLeft" align="right" valign="top">virtual HookResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1api_1_1INetworkModule.html#a51dbf23eba66283a5e5d946275872f88">onRead</a> (<a class="el" href="structzia_1_1net_1_1Connection.html">net::Connection</a> const &amp;connection, net::Buffer &amp;buffer)=0</td></tr>
 <tr class="memdesc:a51dbf23eba66283a5e5d946275872f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method wiil be called after the read function.  <a href="#a51dbf23eba66283a5e5d946275872f88">More...</a><br /></td></tr>
 <tr class="separator:a51dbf23eba66283a5e5d946275872f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a305101fba4712da08df9ad1b93309a48"><td class="memItemLeft" align="right" valign="top">virtual HookResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1api_1_1INetworkModule.html#a305101fba4712da08df9ad1b93309a48">doWrite</a> (<a class="el" href="structzia_1_1net_1_1Connection.html">net::Connection</a> const &amp;connection, net::Buffer &amp;buffer)=0</td></tr>
-<tr class="memdesc:a305101fba4712da08df9ad1b93309a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method wiil be called instead of the basic write function.  <a href="#a305101fba4712da08df9ad1b93309a48">More...</a><br /></td></tr>
-<tr class="separator:a305101fba4712da08df9ad1b93309a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb272aa7226633e286e359885497ac7"><td class="memItemLeft" align="right" valign="top">virtual HookResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1api_1_1INetworkModule.html#a2eb272aa7226633e286e359885497ac7">doWrite</a> (<a class="el" href="structzia_1_1net_1_1Connection.html">net::Connection</a> const &amp;connection, net::Buffer const &amp;buffer, std::size_t &amp;written)=0</td></tr>
+<tr class="memdesc:a2eb272aa7226633e286e359885497ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method wiil be called instead of the basic write function.  <a href="#a2eb272aa7226633e286e359885497ac7">More...</a><br /></td></tr>
+<tr class="separator:a2eb272aa7226633e286e359885497ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a088d0191fe579abd948ec0d5e6772c42"><td class="memItemLeft" align="right" valign="top">virtual HookResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1api_1_1INetworkModule.html#a088d0191fe579abd948ec0d5e6772c42">onWrite</a> (<a class="el" href="structzia_1_1net_1_1Connection.html">net::Connection</a> const &amp;connection, net::Buffer &amp;buffer)=0</td></tr>
 <tr class="memdesc:a088d0191fe579abd948ec0d5e6772c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method wiil be called after the write function.  <a href="#a088d0191fe579abd948ec0d5e6772c42">More...</a><br /></td></tr>
 <tr class="separator:a088d0191fe579abd948ec0d5e6772c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,8 +168,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a305101fba4712da08df9ad1b93309a48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a305101fba4712da08df9ad1b93309a48">&#9670;&nbsp;</a></span>doWrite()</h2>
+<a id="a2eb272aa7226633e286e359885497ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eb272aa7226633e286e359885497ac7">&#9670;&nbsp;</a></span>doWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,8 +186,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">net::Buffer &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em>&#160;</td>
+          <td class="paramtype">net::Buffer const &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>written</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -208,6 +214,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">connection</td><td>Contains the data of the connection (Endpoint and Socket) </td></tr>
     <tr><td class="paramname">buffer</td><td>Contains the data to write in the Socket </td></tr>
+    <tr><td class="paramname">written</td><td>Number of bytes written </td></tr>
   </table>
   </dd>
 </dl>
