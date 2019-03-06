@@ -1,4 +1,6 @@
 <map id="zia::Exception" name="zia::Exception">
-<area shape="rect" id="node3" href="$classzia_1_1api_1_1ConfigurationError.html" title="Configuration error class. " alt="" coords="5,155,183,181"/>
-<area shape="rect" id="node4" href="$classzia_1_1http_1_1ParsingError.html" title="throw a exception " alt="" coords="207,155,357,181"/>
+<area shape="rect" id="node3" href="$classzia_1_1api_1_1ConfigurationError.html" title="Configuration error class. " alt="" coords="331,5,508,32"/>
+<area shape="rect" id="node4" href="$classzia_1_1api_1_1ServerError.html" title="zia::api::ServerError" alt="" coords="350,56,489,83"/>
+<area shape="rect" id="node5" href="$classzia_1_1api_1_1UserError.html" title="zia::api::UserError" alt="" coords="355,107,483,133"/>
+<area shape="rect" id="node6" href="$classzia_1_1http_1_1ParsingError.html" title="throw a exception " alt="" coords="345,157,494,184"/>
 </map>

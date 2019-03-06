@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['servererror',['ServerError',['../classzia_1_1api_1_1ServerError.html',1,'zia::api']]],
   ['setbody',['setBody',['../classzia_1_1http_1_1IMessage.html#ad3fc4e7a05c69afb41f913643913633b',1,'zia::http::IMessage']]],
   ['setendpoint',['setEndpoint',['../classzia_1_1http_1_1IRequest.html#aad64c20e3893e529ed294908ff61b8fc',1,'zia::http::IRequest']]],
   ['setheader',['setHeader',['../classzia_1_1http_1_1IMessage.html#a9cb219757b875355cb7e2899caa1e806',1,'zia::http::IMessage']]],

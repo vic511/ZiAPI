@@ -1,5 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classzia_1_1Exception.html" title="zia::Exception" alt="" coords="5,31,111,57"/>
+<area shape="rect" id="node1" href="$classzia_1_1Exception.html" title="zia::Exception" alt="" coords="5,81,111,108"/>
 <area shape="rect" id="node2" href="$classzia_1_1api_1_1ConfigurationError.html" title="Configuration error class. " alt="" coords="159,5,336,32"/>
-<area shape="rect" id="node3" href="$classzia_1_1http_1_1ParsingError.html" title="throw a exception " alt="" coords="173,56,322,83"/>
+<area shape="rect" id="node3" href="$classzia_1_1api_1_1ServerError.html" title="zia::api::ServerError" alt="" coords="178,56,317,83"/>
+<area shape="rect" id="node4" href="$classzia_1_1api_1_1UserError.html" title="zia::api::UserError" alt="" coords="183,107,311,133"/>
+<area shape="rect" id="node5" href="$classzia_1_1http_1_1ParsingError.html" title="throw a exception " alt="" coords="173,157,322,184"/>
 </map>
