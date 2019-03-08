@@ -15,7 +15,7 @@ public:
 
     /// \brief getter of body
     /// \return return a Buffer that contains the body
-    virtual Buffer const &getBody() = 0;
+    virtual Buffer const &getBody() const = 0;
 
     /// \brief setter of body
     /// \param body Buffer that contains the body
