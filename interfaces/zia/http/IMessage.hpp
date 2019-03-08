@@ -29,7 +29,7 @@ public:
 
     /// \brief getter of headers
     /// \return return a unordered_map of string that contains all headers
-    virtual std::unordered_map<std::string, std::string> const &getHeaders() = 0;
+    virtual std::unordered_map<std::string, std::string> const &getHeaders() const = 0;
 
     /// \brief setter of header
     /// \param name the name of the header you want set
