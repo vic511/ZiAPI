@@ -87,15 +87,18 @@ Inheritance diagram for zia::http::IMessage:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad4514b8804fa2d1169f1d52a8c65ade9"><td class="memItemLeft" align="right" valign="top">virtual Buffer const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IMessage.html#ad4514b8804fa2d1169f1d52a8c65ade9">getBody</a> ()=0</td></tr>
-<tr class="memdesc:ad4514b8804fa2d1169f1d52a8c65ade9"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter of body  <a href="#ad4514b8804fa2d1169f1d52a8c65ade9">More...</a><br /></td></tr>
-<tr class="separator:ad4514b8804fa2d1169f1d52a8c65ade9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04967a7f33f9be2c99a7cf6919153951"><td class="memItemLeft" align="right" valign="top">virtual Buffer const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IMessage.html#a04967a7f33f9be2c99a7cf6919153951">getBody</a> () const =0</td></tr>
+<tr class="memdesc:a04967a7f33f9be2c99a7cf6919153951"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter of body  <a href="#a04967a7f33f9be2c99a7cf6919153951">More...</a><br /></td></tr>
+<tr class="separator:a04967a7f33f9be2c99a7cf6919153951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3fc4e7a05c69afb41f913643913633b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IMessage.html#ad3fc4e7a05c69afb41f913643913633b">setBody</a> (Buffer const &amp;body)=0</td></tr>
 <tr class="memdesc:ad3fc4e7a05c69afb41f913643913633b"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter of body  <a href="#ad3fc4e7a05c69afb41f913643913633b">More...</a><br /></td></tr>
 <tr class="separator:ad3fc4e7a05c69afb41f913643913633b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a158273c06d2cc403449eb49fc52f14ae"><td class="memItemLeft" align="right" valign="top">virtual std::string const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IMessage.html#a158273c06d2cc403449eb49fc52f14ae">getHeader</a> (std::string const &amp;name)=0</td></tr>
-<tr class="memdesc:a158273c06d2cc403449eb49fc52f14ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter of header  <a href="#a158273c06d2cc403449eb49fc52f14ae">More...</a><br /></td></tr>
-<tr class="separator:a158273c06d2cc403449eb49fc52f14ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab624f9e31ef8402ee922356c561443b7"><td class="memItemLeft" align="right" valign="top">virtual std::string const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IMessage.html#ab624f9e31ef8402ee922356c561443b7">getHeader</a> (std::string const &amp;name) const =0</td></tr>
+<tr class="memdesc:ab624f9e31ef8402ee922356c561443b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter of header  <a href="#ab624f9e31ef8402ee922356c561443b7">More...</a><br /></td></tr>
+<tr class="separator:ab624f9e31ef8402ee922356c561443b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08be03f77e321b7c63ff01ebd7bf824e"><td class="memItemLeft" align="right" valign="top">virtual std::unordered_map&lt; std::string, std::string &gt; const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IMessage.html#a08be03f77e321b7c63ff01ebd7bf824e">getHeaders</a> () const =0</td></tr>
+<tr class="memdesc:a08be03f77e321b7c63ff01ebd7bf824e"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter of headers  <a href="#a08be03f77e321b7c63ff01ebd7bf824e">More...</a><br /></td></tr>
+<tr class="separator:a08be03f77e321b7c63ff01ebd7bf824e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cb219757b875355cb7e2899caa1e806"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IMessage.html#a9cb219757b875355cb7e2899caa1e806">setHeader</a> (std::string const &amp;name, std::string const &amp;value)=0</td></tr>
 <tr class="memdesc:a9cb219757b875355cb7e2899caa1e806"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter of header  <a href="#a9cb219757b875355cb7e2899caa1e806">More...</a><br /></td></tr>
 <tr class="separator:a9cb219757b875355cb7e2899caa1e806"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,8 +112,8 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for the message. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad4514b8804fa2d1169f1d52a8c65ade9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4514b8804fa2d1169f1d52a8c65ade9">&#9670;&nbsp;</a></span>getBody()</h2>
+<a id="a04967a7f33f9be2c99a7cf6919153951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04967a7f33f9be2c99a7cf6919153951">&#9670;&nbsp;</a></span>getBody()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,7 +125,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual Buffer const&amp; zia::http::IMessage::getBody </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -137,8 +140,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a158273c06d2cc403449eb49fc52f14ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a158273c06d2cc403449eb49fc52f14ae">&#9670;&nbsp;</a></span>getHeader()</h2>
+<a id="ab624f9e31ef8402ee922356c561443b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab624f9e31ef8402ee922356c561443b7">&#9670;&nbsp;</a></span>getHeader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,7 +154,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -169,6 +172,34 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>return a string that contains the header </dd></dl>
+
+</div>
+</div>
+<a id="a08be03f77e321b7c63ff01ebd7bf824e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08be03f77e321b7c63ff01ebd7bf824e">&#9670;&nbsp;</a></span>getHeaders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unordered_map&lt;std::string, std::string&gt; const&amp; zia::http::IMessage::getHeaders </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getter of headers </p>
+<dl class="section return"><dt>Returns</dt><dd>return a unordered_map of string that contains all headers </dd></dl>
 
 </div>
 </div>

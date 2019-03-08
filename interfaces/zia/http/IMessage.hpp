@@ -3,8 +3,8 @@
 //
 
 #pragma once
-#include "Buffer.hpp"
 #include <unordered_map>
+#include "Buffer.hpp"
 
 namespace zia {
 namespace http {
@@ -25,11 +25,12 @@ public:
     /// \brief getter of header
     /// \param name the name of the header you want
     /// \return return a string that contains the header
-    virtual std::string const &getHeader(std::string const &name) = 0;
+    virtual std::string const &getHeader(std::string const &name) const = 0;
 
     /// \brief getter of headers
     /// \return return a unordered_map of string that contains all headers
-    virtual std::unordered_map<std::string, std::string> const &getHeaders() const = 0;
+    virtual std::unordered_map<std::string, std::string> const &getHeaders()
+        const = 0;
 
     /// \brief setter of header
     /// \param name the name of the header you want set
