@@ -13,6 +13,7 @@ namespace zia {
 namespace api {
 
 class UserError : public Exception {
+public:
     UserError(std::string const &whatArg) : Exception(whatArg) {}
 };
 
