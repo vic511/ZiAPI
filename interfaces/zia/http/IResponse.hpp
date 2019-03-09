@@ -23,11 +23,11 @@ public:
 
     /// \brief get the status code of the response
     /// \return status code of the response
-    virtual StatusCode getStatusCode() = 0;
+    virtual StatusCode getStatusCode() const = 0;
 
     /// \brief get the reason of the response
     /// \return reason of the response
-    virtual std::string const &getReason() = 0;
+    virtual std::string const &getReason() const = 0;
 };
 }  // namespace http
 }  // namespace zia

@@ -9,7 +9,7 @@ var searchData=
   ['getname',['getName',['../classzia_1_1api_1_1IModuleDescriptor.html#a5eaf0e84f423c6a30bcbaaddd43484f0',1,'zia::api::IModuleDescriptor']]],
   ['getpath',['getPath',['../classzia_1_1http_1_1IRequest.html#a829b49e7dee6c1e20adfcf8020ea703c',1,'zia::http::IRequest']]],
   ['getrawbuffer',['getRawBuffer',['../classzia_1_1http_1_1IMessage.html#a9e11a2ab9c798cb7602b077d21a9b7ae',1,'zia::http::IMessage']]],
-  ['getreason',['getReason',['../classzia_1_1http_1_1IResponse.html#a22dfd74694bc942b7d0b54dff1ea2eab',1,'zia::http::IResponse']]],
-  ['getstatuscode',['getStatusCode',['../classzia_1_1http_1_1IResponse.html#a6028af46cffb6c4f01d3b066d4a257ea',1,'zia::http::IResponse']]],
+  ['getreason',['getReason',['../classzia_1_1http_1_1IResponse.html#a409dc6c821d183cac709058171d699b8',1,'zia::http::IResponse']]],
+  ['getstatuscode',['getStatusCode',['../classzia_1_1http_1_1IResponse.html#af3b046b858b9853bc7436783a85f1c70',1,'zia::http::IResponse']]],
   ['gettype',['getType',['../classzia_1_1api_1_1IModuleDescriptor.html#acc288d6e4b7629fcdb79c1067a0b5385',1,'zia::api::IModuleDescriptor']]]
 ];

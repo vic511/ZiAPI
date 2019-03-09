@@ -97,12 +97,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acfa88aeeb91c3d4ffe5e450f2194b80a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IResponse.html#acfa88aeeb91c3d4ffe5e450f2194b80a">setStatus</a> (StatusCode code, std::string const &amp;reason)=0</td></tr>
 <tr class="memdesc:acfa88aeeb91c3d4ffe5e450f2194b80a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the status of the response  <a href="#acfa88aeeb91c3d4ffe5e450f2194b80a">More...</a><br /></td></tr>
 <tr class="separator:acfa88aeeb91c3d4ffe5e450f2194b80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6028af46cffb6c4f01d3b066d4a257ea"><td class="memItemLeft" align="right" valign="top">virtual StatusCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IResponse.html#a6028af46cffb6c4f01d3b066d4a257ea">getStatusCode</a> ()=0</td></tr>
-<tr class="memdesc:a6028af46cffb6c4f01d3b066d4a257ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the status code of the response  <a href="#a6028af46cffb6c4f01d3b066d4a257ea">More...</a><br /></td></tr>
-<tr class="separator:a6028af46cffb6c4f01d3b066d4a257ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22dfd74694bc942b7d0b54dff1ea2eab"><td class="memItemLeft" align="right" valign="top">virtual std::string const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IResponse.html#a22dfd74694bc942b7d0b54dff1ea2eab">getReason</a> ()=0</td></tr>
-<tr class="memdesc:a22dfd74694bc942b7d0b54dff1ea2eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the reason of the response  <a href="#a22dfd74694bc942b7d0b54dff1ea2eab">More...</a><br /></td></tr>
-<tr class="separator:a22dfd74694bc942b7d0b54dff1ea2eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b046b858b9853bc7436783a85f1c70"><td class="memItemLeft" align="right" valign="top">virtual StatusCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IResponse.html#af3b046b858b9853bc7436783a85f1c70">getStatusCode</a> () const =0</td></tr>
+<tr class="memdesc:af3b046b858b9853bc7436783a85f1c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the status code of the response  <a href="#af3b046b858b9853bc7436783a85f1c70">More...</a><br /></td></tr>
+<tr class="separator:af3b046b858b9853bc7436783a85f1c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a409dc6c821d183cac709058171d699b8"><td class="memItemLeft" align="right" valign="top">virtual std::string const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IResponse.html#a409dc6c821d183cac709058171d699b8">getReason</a> () const =0</td></tr>
+<tr class="memdesc:a409dc6c821d183cac709058171d699b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the reason of the response  <a href="#a409dc6c821d183cac709058171d699b8">More...</a><br /></td></tr>
+<tr class="separator:a409dc6c821d183cac709058171d699b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classzia_1_1http_1_1IMessage"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classzia_1_1http_1_1IMessage')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classzia_1_1http_1_1IMessage.html">zia::http::IMessage</a></td></tr>
 <tr class="memitem:a04967a7f33f9be2c99a7cf6919153951 inherit pub_methods_classzia_1_1http_1_1IMessage"><td class="memItemLeft" align="right" valign="top">virtual Buffer const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1IMessage.html#a04967a7f33f9be2c99a7cf6919153951">getBody</a> () const =0</td></tr>
 <tr class="memdesc:a04967a7f33f9be2c99a7cf6919153951 inherit pub_methods_classzia_1_1http_1_1IMessage"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter of body  <a href="classzia_1_1http_1_1IMessage.html#a04967a7f33f9be2c99a7cf6919153951">More...</a><br /></td></tr>
@@ -130,8 +130,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Interface for the response. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classzia_1_1http_1_1IMessage.html" title="Interface for the message. ">IMessage</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a22dfd74694bc942b7d0b54dff1ea2eab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22dfd74694bc942b7d0b54dff1ea2eab">&#9670;&nbsp;</a></span>getReason()</h2>
+<a id="a409dc6c821d183cac709058171d699b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a409dc6c821d183cac709058171d699b8">&#9670;&nbsp;</a></span>getReason()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual std::string const&amp; zia::http::IResponse::getReason </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -158,8 +158,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6028af46cffb6c4f01d3b066d4a257ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6028af46cffb6c4f01d3b066d4a257ea">&#9670;&nbsp;</a></span>getStatusCode()</h2>
+<a id="af3b046b858b9853bc7436783a85f1c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3b046b858b9853bc7436783a85f1c70">&#9670;&nbsp;</a></span>getStatusCode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +171,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual StatusCode zia::http::IResponse::getStatusCode </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
